@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+/* Choose this for Editor Dark Theme */
+// @import './quill.smoke.css';
+
+/* Or choose this for standard Editor Light Theme */
+@import '../node_modules/quill/dist/quill.snow.css';
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+// @import '~quill/dist/quill.snow.css'; 
+html, body { height: 100%; font-family: "Space Mono", monospace; 
+  
+  background-color:hsla(134,0%,100%,1);
+  background-image:
+  radial-gradient(at 64% 83%, hsla(92,75%,73%,1) 0px, transparent 50%),
+  radial-gradient(at 60% 87%, hsla(39,79%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 23% 12%, hsla(250,84%,62%,1) 0px, transparent 50%);
+
+//   background-color:hsla(203,0%,100%,1);
+// background-image:
+// radial-gradient(at 21% 26%, hsla(253,67%,68%,1) 0px, transparent 50%),
+// radial-gradient(at 39% 1%, hsla(306,82%,79%,1) 0px, transparent 50%),
+// radial-gradient(at 10% 28%, hsla(223,87%,73%,1) 0px, transparent 50%),
+// radial-gradient(at 36% 27%, hsla(312,94%,76%,1) 0px, transparent 50%),
+// radial-gradient(at 0% 7%, hsla(211,97%,71%,1) 0px, transparent 50%),
+// radial-gradient(at 66% 21%, hsla(319,89%,64%,1) 0px, transparent 50%);
+
+// background-color:hsla(203,0%,100%,1);
+// background-image:
+// radial-gradient(at 99% 23%, hsla(261,73%,64%,1) 0px, transparent 50%),
+// radial-gradient(at 92% 54%, hsla(344,70%,65%,1) 0px, transparent 50%),
+// radial-gradient(at 49% 30%, hsla(251,60%,64%,1) 0px, transparent 50%),
+// radial-gradient(at 21% 26%, hsla(257,67%,68%,1) 0px, transparent 50%),
+// radial-gradient(at 39% 1%, hsla(310,82%,79%,1) 0px, transparent 50%),
+// radial-gradient(at 10% 28%, hsla(227,87%,73%,1) 0px, transparent 50%),
+// radial-gradient(at 36% 27%, hsla(316,94%,76%,1) 0px, transparent 50%),
+// radial-gradient(at 66% 21%, hsla(323,89%,64%,1) 0px, transparent 50%);
+
+// background-color:hsla(205,0%,100%,1);
+// background-image:
+// radial-gradient(at 48% 32%, hsla(256,87%,62%,1) 0px, transparent 50%),
+// radial-gradient(at 85% 42%, hsla(297,82%,68%,1) 0px, transparent 50%),
+// radial-gradient(at 10% 62%, hsla(261,63%,73%,1) 0px, transparent 50%),
+// radial-gradient(at 31% 28%, hsla(177,94%,64%,1) 0px, transparent 50%),
+// radial-gradient(at 16% 7%, hsla(344,75%,78%,1) 0px, transparent 50%),
+// radial-gradient(at 67% 66%, hsla(185,63%,73%,1) 0px, transparent 50%),
+// radial-gradient(at 0% 30%, hsla(68,84%,70%,1) 0px, transparent 50%);
+
+}
+body { margin: 0; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.tiptap:focus-visible{
+    outline: none;
+}
+
+/* Basic editor styles */
+.tiptap {
+    :first-child {
+      margin-top: 0;
+    }
+  
+    /* Placeholder (at the top) */
+    p.is-editor-empty:first-child::before {
+      color: var(--gray-4);
+      content: attr(data-placeholder);
+      float: left;
+      height: 0;
+      pointer-events: none;
+    }
+  
+    p {
+      word-break: break-all;
+    }
+  
+    /* Give a remote user a caret */
+    .collaboration-cursor__caret {
+      border-left: 1px solid #0d0d0d;
+      border-right: 1px solid #0d0d0d;
+      margin-left: -1px;
+      margin-right: -1px;
+      pointer-events: none;
+      position: relative;
+      word-break: normal;
+    }
+  
+    /* Render the username above the caret */
+    .collaboration-cursor__label {
+      border-radius: 3px 3px 3px 0;
+      color: #0d0d0d;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      left: -1px;
+      line-height: normal;
+      padding: 0.1rem 0.3rem;
+      position: absolute;
+      top: -1.4em;
+      user-select: none;
+      white-space: nowrap;
+    }
+    
+  }
+
+  .mat-mdc-dialog-container {
+    border-radius: 2px;  
+  }
+

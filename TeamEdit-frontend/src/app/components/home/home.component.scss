@@ -1,0 +1,150 @@
+table {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  background-color: white;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container{
+  padding: 10% 20% 20% 20%;
+}
+
+.project-info{
+  color: gray;
+}
+
+.child-container{
+  padding-top: 20px;
+  background-color: #faf9ff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.04);   
+}
+
+.left-align-forced{
+  width:100%;
+  padding-left: 30px;
+}
+
+// .right-align-forced {
+//   width:100%;
+//   text-align:right;
+// }
+
+.project-title{
+  font-family: "Space Mono", monospace;
+  margin: 0;  
+}
+
+.container-header{
+  background-color: rgb(249, 250, 252);
+  font-family: "Space Mono", monospace;
+}
+
+.table-header-title{
+  padding-left: 30px;
+}
+
+.add-note-input-container {
+  margin-top: 10px;
+  margin-left: 40%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(204, 212, 225); 
+  border-radius: 30px; 
+  background-color: white;
+}
+
+.title-column{
+  padding-left: 30px;
+}
+
+.add-note-input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  flex-grow: 1;
+  border-radius: 30px; 
+  font-family: "Space Mono", monospace;
+}
+.right-align-forced{
+  width:100%;
+  text-align:right;
+  padding: 30px;
+}
+
+mat-form-field.mat-form-field {
+  font-size: 16px;
+}
+
+::ng-deep .mdc-notched-outline__leading {
+  border-color: rgb(204, 212, 225) !important;
+}
+::ng-deep .mdc-notched-outline__notch {
+  border-color: rgb(204, 212, 225) !important;
+}
+::ng-deep .mdc-notched-outline__trailing {
+  border-color: rgb(204, 212, 225) !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper{
+background-color: white !important;
+}
+
+.add-note-mat-label{
+  font-family: "Space Mono", monospace;
+  font-size: small;
+}
+
+.add-note-button {
+  border: none;
+  outline: none;
+  color: white; 
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-note-button-icon {
+  font-size: 18px; 
+  color: rgb(30, 41, 59); 
+}
+
+.mat-mdc-header-row .mat-mdc-header-cell {
+  border-bottom: 1px solid rgb(204, 212, 225);
+  background-color: rgb(249, 250, 252);
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid rgb(234, 239, 243);
+  font-family: "Space Mono", monospace;
+}
+
+.mat-cell{
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.mat-mdc-row:last-child  .mat-mdc-cell {
+  border-bottom: none;
+}
+
+.table-header{
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+
+.actions-table-header{
+text-align: center;
+font-family: "Space Mono", monospace;
+font-weight: bold;
+}
+
+.actions-column{
+text-align: center;
+}

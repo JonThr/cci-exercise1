@@ -1,0 +1,25 @@
+<div cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>
+        <div class="toolbar">               
+            <button (click)="editor.chain().focus().toggleBold().run()"><mat-icon class="ttes">format_bold</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleItalic().run()"><mat-icon style="color: white;">format_italic</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleStrike().run()"><mat-icon style="color: white;">strikethrough_s</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleBlockquote().run()"><mat-icon style="color: white;">format_quote</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleHeading({ level: 1 }).run()">H<sub>1</sub></button>
+            <button (click)="editor.chain().focus().toggleHeading({ level: 2 }).run()">H<sub>2</sub></button>
+            <button (click)="editor.chain().focus().toggleHeading({ level: 3 }).run()">H<sub>3</sub></button>
+            <button (click)="editor.chain().focus().toggleCodeBlock().run()"><mat-icon style="color: white;">code</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleBulletList().run()"><mat-icon style="color: white;">format_list_bulleted</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleOrderedList().run()"><mat-icon style="color: white;">format_list_numbered</mat-icon></button>
+            <button (click)="editor.chain().focus().setHorizontalRule().run()"><mat-icon style="color: white;">remove</mat-icon></button>
+            <button (click)="editor.chain().focus().toggleHighlight({ color: '#b197fc' }).run()"><mat-icon style="color: white;">border_color</mat-icon></button>
+              <button class="editorCloseBtn" (click)="closeEditor()" (click)="toggleIcon()" [ngClass]="{'animate': isSaveIcon}">
+                <mat-icon *ngIf="!isSaveIcon">close</mat-icon>
+                <mat-icon *ngIf="isSaveIcon">save</mat-icon>
+              </button>
+          </div>
+</div>
+<div mat-dialog-content>
+    <div class="tiptap">
+    </div>
+</div>
+
