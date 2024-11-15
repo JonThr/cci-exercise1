@@ -7,7 +7,7 @@
       "defaultValue": "TeamEdit",
       "metadata": {
         "_parameterType": "resourceGroup",
-        "description": "Der Name der Ressourcengruppe für die Ressource. Es wird empfohlen, Ressourcen für eine bessere Nachverfolgung in derselben Ressourcengruppe zu platzieren."
+        "description": "Name of the resource group for the resource. It is recommended to put resources under same resource group for better tracking."
       }
     },
     "resourceGroupLocation": {
@@ -15,7 +15,7 @@
       "defaultValue": "westeurope",
       "metadata": {
         "_parameterType": "location",
-        "description": "Der Standort der Ressourcengruppe. Ressourcengruppen können andere Standorte als Ressourcen aufweisen."
+        "description": "Location of the resource group. Resource groups could have different location than resources."
       }
     },
     "resourceLocation": {
@@ -23,7 +23,7 @@
       "defaultValue": "[parameters('resourceGroupLocation')]",
       "metadata": {
         "_parameterType": "location",
-        "description": "Der Standort der Ressource. Verwenden Sie standardmäßig den Standort der Ressourcengruppe, sofern der Ressourcenanbieter dort unterstützt wird."
+        "description": "Location of the resource. By default use resource group's location, unless the resource provider is not supported there."
       }
     }
   },
