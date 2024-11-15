@@ -53,7 +53,7 @@ app.UseCors("AngularCorsPolicy");
 //    await notesContext.Database.EnsureCreatedAsync();
 //}
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.MapNotes();
 
