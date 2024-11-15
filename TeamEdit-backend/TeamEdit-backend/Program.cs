@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<NotesContext>(options =>
 {
-    string connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Could not read connection string");
+    string connectionString = builder.Configuration.GetConnectionString("SqlDbConnection") ?? throw new InvalidOperationException("Could not read connection string");
     options.UseSqlServer(connectionString);
 });
 
