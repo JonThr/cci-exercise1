@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>TeamEdit_backend</RootNamespace>
+    <UserSecretsId>50e0d564-f2fd-4d1e-b1a7-6fcd2b449c0e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
