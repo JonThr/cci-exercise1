@@ -27,11 +27,6 @@ table {
   padding-left: 30px;
 }
 
-// .right-align-forced {
-//   width:100%;
-//   text-align:right;
-// }
-
 .project-title{
   font-family: "Space Mono", monospace;
   margin: 0;  
@@ -76,16 +71,6 @@ table {
 
 mat-form-field.mat-form-field {
   font-size: 16px;
-}
-
-::ng-deep .mdc-notched-outline__leading {
-  border-color: rgb(204, 212, 225) !important;
-}
-::ng-deep .mdc-notched-outline__notch {
-  border-color: rgb(204, 212, 225) !important;
-}
-::ng-deep .mdc-notched-outline__trailing {
-  border-color: rgb(204, 212, 225) !important;
 }
 
 ::ng-deep .mat-mdc-text-field-wrapper{

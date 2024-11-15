@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { DialogComponent } from './components/dialog/dialog.component';
 import { FormsModule } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -25,7 +24,6 @@ import {DragDropModule} from '@angular/cdk/drag-drop'
   declarations: [
     AppComponent,
     HomeComponent,
-    DialogComponent,
     EditorComponent
   ],
   imports: [

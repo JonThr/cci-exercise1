@@ -68,12 +68,5 @@ public class NotesService(INotesRepository notesRepository, ILogger<NotesService
     {
         var existingNote = await _notesRepository.UpdateNoteAsync(note, cancellationToken);
         return existingNote;
-
-        //var existingNote = await GetNoteByIdAsync(note.Id);
-        //if (existingNote == null)
-        //    return null;
-
-        //existingNote = await _notesRepository.UpdateNoteAsync(existingNote, cancellationToken);
-        //return existingNote;
     }
 }

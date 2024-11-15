@@ -53,23 +53,6 @@ public static class NotesEndpoint
 
             var existingNote = await notesService.UpdateNoteAsync(note);
             return TypedResults.Ok();
-
-
-            //if (note == null || id != note.Id)
-            //{
-            //    return TypedResults.BadRequest();
-            //}
-
-            //var existingNote = await notesService.GetNoteByIdAsync(id);
-            //if(existingNote == null)
-            //{
-            //    return TypedResults.NotFound();
-            //}
-            //else
-            //{
-            //    return TypedResults.NoContent();
-            //}
-
         }).WithName("UpdateNote")
         .WithOpenApi();
 
@@ -81,12 +64,6 @@ public static class NotesEndpoint
 
             await notesService.DeleteNoteAsync(id);
             return TypedResults.Ok();
-
-            //var note = await notesService.DeleteNoteAsync(id);
-            //if (note == null)
-            //    return TypedResults.NotFound();
-
-            //return TypedResults.NoContent();
         }).WithName("DeleteNote")
         .WithOpenApi();
     }

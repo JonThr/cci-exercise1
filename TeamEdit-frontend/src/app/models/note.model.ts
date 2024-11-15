@@ -3,5 +3,4 @@ export interface Note{
     title: string
     content: string
     time: Date
-    room: string
 }

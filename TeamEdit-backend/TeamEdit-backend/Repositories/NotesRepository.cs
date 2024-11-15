@@ -73,16 +73,5 @@ public class NotesRepository(NotesContext context, ILogger<NotesRepository> logg
         }
 
         return note;
-
-        //_context.Entry(note).State = EntityState.Modified;
-
-        //try
-        //{
-        //    await _context.SaveChangesAsync();
-        //}
-        //catch(DbUpdateException ex)
-        //{
-        //    _logger.LogError(ex, "Updating a note failed.");
-        //}
     }
 }
