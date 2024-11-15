@@ -46,12 +46,12 @@ app.UseCors("AngularCorsPolicy");
 
 //app.UseRouting();
 
-using (var scope = app.Services.CreateScope())
-{
-    var notesContext = scope.ServiceProvider.GetRequiredService<NotesContext>();
+//using (var scope = app.Services.CreateScope())
+//{
+//    var notesContext = scope.ServiceProvider.GetRequiredService<NotesContext>();
 
-    await notesContext.Database.EnsureCreatedAsync();
-}
+//    await notesContext.Database.EnsureCreatedAsync();
+//}
 
 //app.UseHttpsRedirection();
 
